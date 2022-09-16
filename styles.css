@@ -1,0 +1,332 @@
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 600px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+  span:before {
+    left: -2.5px;
+  }
+  span:after {
+    right: 2.5px;
+    background: rgb(0, 0, 0);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:before {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  
+  
+      .nav-bar{
+          margin-left: 20px;
+          padding-top: 10px;
+          
+      }
+      nav{
+        
+      }
+      body{
+          background-image: url("bg.png");
+          font-family: 'Share Tech Mono';font-size: 22px;
+      }
+      #cimage{
+        position: absolute;
+        width: 1300px;
+        right: 500px;
+        left: 769px;
+    }
+    #cimage2{
+      position: absolute;
+      width: 1587px;
+      right: 500px;
+      left: 769px;
+  }
+      }
+      .titlebold{
+          font-size: 50px;
+          font-weight: bolder;
+      }
+      .title{
+          font-size: 50px;
+      }
+      #nametitle{
+        position: absolute;
+        width: 1000px;
+        left: 10px;
+        bottom: -234px;
+  
+      }
+      #type{
+        margin-top: 20px;
+        font-size: 30px;
+      }
+    #typedtext{
+      position: absolute;
+      top: 209px;
+      left: 173px;
+      font-size: 35px;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+  font-family: 'Cedarville Cursive', cursive;
+}
+a:visited{
+  color: rgb(255, 153, 0);
+  text-decoration: none;
+  font-family: 'Cedarville Cursive', cursive;
+}
+#typehi{
+  width: 1482px;
+  position: absolute;
+  left: -38px;
+  top: -81px;
+  z-index: -1;
+}
+#typebox{
+  border: 3px solid black;
+  background: none;
+  font-family: 'Share Tech Mono';
+  position: absolute;
+  top: 299px;
+  left: 528px;
+  padding: 10px 30px;
+  font-size: 23px;
+}
+#typebox::placeholder{
+  font-size: 23px;
+  color: black;
+}
+#pinkline{
+  position: absolute;
+  width: 180px;
+  left: 469px;
+  top: 290px;
+  z-index:-1;
+  opacity: 0;
+}
+#blueline{
+  position: absolute;
+  left: 152px;
+  top: 447px;
+  width: 174px;
+  z-index: -1;
+  opacity: 0;
+}
+#orangeline{
+  width: 379px;
+  top: 331px;
+  left: 287px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+#html{
+  left: 35px;
+  top: 40px;
+  position: absolute;
+}
+#head{
+  left: 224px;
+  top: 80px;
+  position: absolute;
+}
+#_head{
+  left: 220px;
+  top: 163px;
+  position: absolute;
+}
+#_html{
+  left: 35px;
+  top: 670px;
+  position: absolute;
+}
+#_body{
+  left: 142px;
+  top: 476px;
+  position: absolute;
+}
+#body{
+  left: 141px;
+  top: 202px;
+  position: absolute;
+}
+.decor{
+  color: gray;
+}
+#aboutMe{
+  width: 200px;
+  position: absolute;
+  left: -160px;
+  top: -92px;
+}
+#work{
+  width: 200px;
+  position: absolute;
+  /* left: 6px; */
+  top: -92px;
+}
+#contact{
+  width: 200px;
+  position: absolute;
+  left: 171px;
+  top: -85px;
+}
+#textabout{
+  padding: 93px 56px;
+  color: black;
+  width: 481px;
+  height: 591px;
+  font-family: "PT Sans";
+  position: absolute;
+  left: 138px;
+  top: 190px;
+  background-position: 0%;
+  background-size: cover;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+#aboutme{
+  width: 805px;
+  position: absolute;
+  top: -257px;
+  left: 23px;
+  z-index: -1;
+}
+#backaboutme{
+  width: 921px;
+  position: absolute;
+  top: 93px;
+  left: -33px;
+}
+#backaboutme2{
+
+width: 1015px;
+    position: absolute;
+    top: 127px;
+    left: 326px;
+    right: 0px;
+}
+#skills{
+  width: 742px;
+  position: absolute;
+  top: 276px;
+}
+#pdf{
+  width: 600px;
+    height: 800px;
+    position: absolute;
+    /* top: -83px; */
+    top: 180px;
+    right: 140px;
+}
+#progtitle{
+  width: 805px;
+    position: absolute;
+    top: 62px;
+    left: 23px;
+    z-index: -1;
+}
+#worktitle{
+  width: 805px;
+    position: absolute;
+    top: -230px;
+    right: 23px;
+    z-index: -1;
+}
+#skillsworks{
+  width: 1270px;
+  position: absolute;
+  top: -228px;
+  left: -224px;
+  z-index: -1;
+}
+
+#textcontact{
+  padding: 93px
+   56px;
+      color: black;
+      width: 448px;
+      height: 591px;
+      font-family: "PT Sans";
+      position: absolute;
+      left: 567px;
+      top: 305px;
+      font-size: 30px;
+      background-position: 0%;
+      background-size: cover;
+      text-align: justify;
+      text-justify: inter-word;
+}
+
+#textcontact2{
+  padding: 93px 56px;
+  color: black;
+  width: 448px;
+  height: 591px;
+  font-family: "PT Sans";
+  position: absolute;
+  left: 633px;
+  top: 411px;
+  font-size: 30px;
+  background-position: 0%;
+  background-size: cover;
+  text-align: justify;
+  text-justify: inter-word;
+}
+  
+
+#textcontact3{
+  padding: 93px 56px;
+  color: black;
+  width: 767px;
+  height: 648px;
+  font-family: "PT Sans";
+  position: absolute;
+  left: 467px;
+  top: 510px;
+  font-size: 30px;
+  background-position: 0%;
+  background-size: cover;
+  text-align: justify;
+  text-justify: inter-word;
+}

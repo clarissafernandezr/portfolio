@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><span><a HREF=index.html style="font-family: 'Cedarville Cursive', cursive; font-size: 30px; color: black;">home</a></span></li>
+              <li><span><a HREF=about.html style="font-family: 'Cedarville Cursive', cursive; font-size: 30px; color: black;">about me</a></span></li>
+              <li><span><a HREF=work.html  style="font-family: 'Cedarville Cursive', cursive;font-size: 30px;color: black;">work</a></span></li>
+              <li><span><a HREF=contact.html  style="font-family: 'Cedarville Cursive', cursive;font-size: 30px;color: black;">contact</a></span></li>
+            </ul>
+    </nav>
+</head>
+<body>
+    <p class="decor" id="html" style="font-family: 'Cedarville Cursive', cursive;">  &lthtml&gt </p>
+    <p class="decor" id="head" style="font-family: 'Cedarville Cursive', cursive;">  &lthead&gt </p>
+    <p class="decor" id="_head" style="font-family: 'Cedarville Cursive', cursive;">  &lt/head&gt </p>
+    <p class="decor" id="body" style="font-family: 'Cedarville Cursive', cursive;">  &ltbody&gt </p>
+    <p class="decor" id="_body" style="font-family: 'Cedarville Cursive', cursive;">  &lt/body&gt </p>
+    <p class="decor"id="_html" style="font-family: 'Cedarville Cursive', cursive;">  &lt/html&gt </p>
+
+    <img id="typehi" src="typehi.png">
+    <input id="typebox" name="typehi" onkeyup="typehi()" placeholder="...">
+    <script>
+        function typehi(){
+            inputVal= document.getElementById("typebox").value;
+           if (inputVal=="Hi"||inputVal=="hi"){
+
+
+            x=document.getElementById('typedtext');
+            x.setAttribute("style","opacity:1;");
+            y=document.getElementById('typehi');
+            y.setAttribute("style","opacity:0;");
+            z=document.getElementById('typebox');
+            z.setAttribute("style","opacity:0;");
+            typewriter();
+           }
+
+        }
+    </script>
+    
+    <div style="opacity: 0" id="typedtext"></div> 
+
+      <img id="cimage" src="CLarissa_Drawing.png" alt="clarissa_image">
+      <img id="nametitle" src="nametitle3.png" alt="clarissa_image">
+      <p id="demo"></p>
+      <img id="pinkline" src="pinkline.png">
+      <img id="blueline" src="blueline.png">
+      <img id="orangeline" src="orangeline.png">
+
+<section>
+  
+</section>
+
+</body>
+<script>
+    var aText = new Array(
+        "    ",
+        "...",
+"Hi:) My name is Clarissa! ", 
+"I am a creative developer.",
+"Currently, I am a Computational Media student",
+"at Georgia Institute of Technology",
+"Explore this page to find out more about me!"
+);
+
+
+
+var speeed = 100;
+var indx = 0; 
+var iArrLength = aText[0].length; 
+var iScrollAt = 20;
+ 
+var texpos = 0;
+var stringcont = ''; 
+var row;
+ 
+function typewriter()
+{
+ stringcont =  ' ';
+ row = Math.max(0, indx-iScrollAt);
+ var destination = document.getElementById("typedtext");
+
+ while ( row < indx ) {
+  stringcont += aText[row++] + '<br />';
+ 
+ }
+ destination.innerHTML = stringcont + aText[indx].substring(0, texpos) + "_";
+ if ( texpos++ == iArrLength ) {
+  texpos = 0;
+  indx++;
+  if ( indx != aText.length ) {
+   iArrLength = aText[indx].length;
+   setTimeout("typewriter()", 500);
+   
+  }
+
+ } else {
+  setTimeout("typewriter()", speeed);
+  
+ }
+
+
+}
+
+/*function colors(){
+    pinkline=document.getElementById("pinkline");
+ pinkline.setAttribute("style","opacity:1;");
+ pinkline.setAttribute("style","transition: opacity 2s linear;");
+
+ pinkline.setAttribute("style"," visibility: visible;");
+ 
+ blueline=document.getElementById("blueline");
+ blueline.setAttribute("style","opacity:1;");
+ orangeline=document.getElementById("orangeline");
+ orangeline.setAttribute("style","opacity:1;");
+
+ 
+}
+setTimeout("colors()", 90000);
+*/
+</script>
+</html>
