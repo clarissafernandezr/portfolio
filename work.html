@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-  
     <head>
         <nav>
             <div class="container">
                 <ul>
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
                     <li><span><a HREF=index.html style="font-family: 'Cedarville Cursive', cursive; font-size: 30px; color: black;">home</a></span></li>
                   <li><span><a HREF=about.html style="font-family: 'Cedarville Cursive', cursive; font-size: 30px; color: black;">about me</a></span></li>
                   <li><span><a HREF=work.html  style="font-family: 'Cedarville Cursive', cursive;font-size: 30px;color: black;">work</a></span></li>
@@ -17,12 +23,57 @@
    <!--<img src="SKILLSWORK.png" id="skillsworks"> -->
     </head>
     <body>
-        <h1 style="position: absolute;left:76px;font-weight:100;font-family: 'Cedarville Cursive', cursive;font-size: 100px;color: black;">Skills+Work</h1>
-        <img src="skills.png" id="skills">
-        <img src="progskills.png" id="progtitle">
-        <img src="prevwork.png" id="worktitle">
-<div>  <iframe id="pdf" src="PREVIOUS WORK.pdf" height="200" width="300"></iframe></div>
-      
-      
+        <div>
+            
+        <div class="title" style="font-family: 'Cedarville Cursive', cursive;font-size: 100px;color: black;">projects</div>
+        <div class="tit" style="font-weight:600;font-size: 30px;color: rgb(181, 0, 66);">Virtual Reality Solar System Model </div>
+        <div class="tit" style="font-weight:300;font-size: 18px;color: black;">A Solar System Model created using A-Frame and HTML.</div>
+        <div class="tit" style="font-weight:300;font-size: 18px;color: black;">Link to webstite: https://adejamann.github.io/A-Frame/        </div>
+        <img class= "solar" src="vr1.png">
+        <img class= "solar" src="vr2.png">
+        <div class="tit" style="font-weight:600;font-size: 30px;color: rgb(181, 0, 66);">LoveStung </div>
+        <div class="tit" style="font-weight:100;font-size: 18px;color: black;">An interactive video game created using JavaScript.</div>
+        <div class="tit" style="font-weight:100;font-size: 18px;color: black;">Link to webstite: https://clin445.github.io/LMC-2700-Assignment-5/</div>
+        <img class= "solar" src="lv1.png">
+        <img class= "solar" src="lv3.png">
+        </div>
+        <div>
+        <div class="tit" style="font-weight:100;font-family: 'Cedarville Cursive', cursive;font-size: 100px;color: black;">design portfolio</div>
+     <iframe class="prev" src="PREVIOUS WORK.pdf" height="900" width="300"></iframe></div>
+    </div>
     </body>
+    <style>
+        .solar{
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 10px;
+        }
+        .prev{
+              display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 50px;
+        }
+        .tit{
+            margin: auto;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+        .title{
+            margin: auto;
+            text-align: center;
+            margin-bottom: -60px;
+            margin-top: -60px;
+
+            font-family: 'Quicksand', sans-serif;
+
+        }
+    </style>
+
 </html>
